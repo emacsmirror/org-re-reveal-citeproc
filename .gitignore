@@ -1,0 +1,18 @@
+# SPDX-FileCopyrightText: 2020,2021 Jens Lechtenbörger
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+*.elc
+*.html
+*.html~
+auto
+*.aux
+*.bcf
+*.bbl
+*.blg
+*.log
+*.out
+*.pdf
+*.run.xml
+*.tex~
+*.tex
+*.toc
