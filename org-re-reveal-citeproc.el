@@ -40,7 +40,7 @@
 ;; 0. Install prerequisites
 ;;    - reveal.js: https://revealjs.com/
 ;;    - *Recent* Org mode: https://orgmode.org/
-;;    - citeproc-org: MELPA or https://github.com/andras-simonyi/citeproc-org
+;;    - citeproc-org: MELPA or https://github.com/andras-simonyi/citeproc-el
 ;; 1. Install org-re-reveal and org-re-reveal-citeproc, either from MELPA
 ;;    or GitLab:
 ;;    - https://gitlab.com/oer/org-re-reveal/
@@ -66,7 +66,7 @@
 
 ;;; Code:
 (require 'citeproc)
-(require 'oc-csl)
+(require 'oc)
 (require 'org-re-reveal)
 
 (defcustom org-re-reveal-citeproc-bib "bibliography"

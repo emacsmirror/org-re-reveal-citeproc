@@ -52,7 +52,7 @@ and comments) are not displayed (properly) on GitLab.
      (from MELPA or [[https://gitlab.com/oer/org-re-reveal/][GitLab]])
    - Install recent (version 9.5) of [[https://orgmode.org/][Org mode]]
      and
-     [[https://github.com/andras-simonyi/citeproc-org][citeproc-org]]
+     [[https://github.com/andras-simonyi/citeproc-el][citeproc-el]]
      (~citeproc~ on MELPA)
    - Activate ~org-re-reveal-citeproc~
      - Place [[file:./org-re-reveal-citeproc.el]] into your load path
