@@ -36,6 +36,10 @@
 ;; `org-re-reveal'.  Also, export to PDF via LaTeX and export to
 ;; HTML with Org's usual export functionality work.
 ;;
+;; This package is an alternative to `org-re-reveal-ref'.
+;; While the latter which relies on `org-ref', `org-re-reveal-citeproc'
+;; supports the new Org mode syntax introduced in in Org mode 9.5.
+;;
 ;; * Install
 ;; 0. Install prerequisites
 ;;    - reveal.js: https://revealjs.com/
@@ -54,7 +58,7 @@
 ;; 2. Load an Org file and export it to HTML.
 ;;    (a) Make sure that reveal.js is available in your current directory
 ;;        (e.g., as sub-directory or symbolic link).
-;;    (b) Load "README.org" (coming with org-re-reveal-ref).
+;;    (b) Load "README.org" (coming with org-re-reveal-citeproc).
 ;;    (c) Export to HTML: Key bindings depend upon version of org-re-reveal.
 ;;        Starting with version 1.0.0, press "C-c C-e v v" (write HTML file)
 ;;        or "C-c C-e v b" (write HTML file and open in browser)
