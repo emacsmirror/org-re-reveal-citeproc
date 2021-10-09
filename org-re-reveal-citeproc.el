@@ -66,7 +66,7 @@
 
 ;;; Code:
 (require 'citeproc)
-(require 'oc)
+(require 'oc-csl)
 (require 'org-re-reveal)
 
 (defcustom org-re-reveal-citeproc-bib "bibliography"
