@@ -95,7 +95,7 @@ where TEXT is the paragraph, and BACKEND is checked for `re-reveal'."
 (add-to-list 'org-export-filter-paragraph-functions
 	     #'org-re-reveal-citeproc-filter-cite)
 
-(defun org-re-reveal-ref-unload-function ()
+(defun org-re-reveal-citeproc-unload-function ()
   "Undo change of `org-export-filter-paragraph-functions'."
   (progn
     (setq org-export-filter-paragraph-functions
