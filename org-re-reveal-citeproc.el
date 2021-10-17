@@ -7,7 +7,7 @@
 
 ;; Author: Jens Lechtenbörger
 ;; URL: https://gitlab.com/oer/org-re-reveal-citeproc
-;; Version: 1.1.0
+;; Version: 1.1.1
 ;; Package-Requires: ((emacs "25.1") (org "9.5") (citeproc "0.9") (org-re-reveal "3.0.0"))
 ;; Keywords: hypermedia, tools, slideshow, presentation, bibliography
 
@@ -97,11 +97,11 @@ where TEXT is the paragraph, and BACKEND is checked for `re-reveal'."
 
 (defun org-re-reveal-citeproc-unload-function ()
   "Undo change of `org-export-filter-paragraph-functions'."
-  (progn
-    (setq org-export-filter-paragraph-functions
-          (delete #'org-re-reveal-citeproc-filter-cite
-                  org-export-filter-paragraph-functions))
-    t))
+  (setq org-export-filter-paragraph-functions
+        (delete #'org-re-reveal-citeproc-filter-cite
+                org-export-filter-paragraph-functions))
+  ;; Continue standard unloading
+  nil)
 
 (provide 'org-re-reveal-citeproc)
 ;;; org-re-reveal-citeproc.el ends here
