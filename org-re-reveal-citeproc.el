@@ -51,10 +51,11 @@
 ;;    - https://gitlab.com/oer/org-re-reveal-citeproc/
 ;;    (a) Place their directories into your load path or install from MELPA
 ;;        (https://melpa.org/#/getting-started).
-;;    (b) Load package manually ("M-x load-library" followed by
-;;        "org-re-reveal-citeproc") or place
-;;        "(require 'org-re-reveal-citeproc)" into
-;;        your ~/.emacs and restart.
+;;    (b) Load and configure org-re-reveal-citeproc.  E.g. place the following
+;;        into your ~/.emacs and restart:
+;;        (require 'org-re-reveal-citeproc)
+;;        (add-to-list 'org-export-filter-paragraph-functions
+;;	               #'org-re-reveal-citeproc-filter-cite)
 ;; 2. Load an Org file and export it to HTML.
 ;;    (a) Make sure that reveal.js is available in your current directory
 ;;        (e.g., as sub-directory or symbolic link).
@@ -67,6 +68,10 @@
 ;; The value of `org-re-reveal-citeproc-bib' is used to generate hyperlinks
 ;; to the bibliography.  You must use its value as CUSTOM_ID on your
 ;; bibliography slide.
+;;
+;; Function org-re-reveal-citeproc-filter-cite makes sure that Org citations
+;; point to the bibiography slide.  You should add
+;; it to org-export-filter-paragraph-functions as shown above.
 
 ;;; Code:
 (require 'citeproc)
@@ -92,8 +97,6 @@ where TEXT is the paragraph, and BACKEND is checked for `re-reveal'."
              org-re-reveal-citeproc-bib
              "\"")
      text)))
-(add-to-list 'org-export-filter-paragraph-functions
-	     #'org-re-reveal-citeproc-filter-cite)
 
 (defun org-re-reveal-citeproc-unload-function ()
   "Undo change of `org-export-filter-paragraph-functions'."
