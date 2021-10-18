@@ -10,6 +10,12 @@ where version numbers starting with version 1.0.0 adhere to
 
 ** [Unreleased]
 
+** [2.0.0] - 2021-10-18
+*** Removed
+- As suggested on [[https://github.com/melpa/melpa/pull/7751][MELPA]],
+  do not modify ~org-export-filter-paragraph-functions~ but leave that
+  to users
+
 ** [1.1.1] - 2021-10-17
 *** Fixed
 - Return nil from unload function
