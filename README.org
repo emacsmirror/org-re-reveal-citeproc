@@ -4,10 +4,9 @@
 #+SPDX-FileCopyrightText: 2019-2021 Jens Lechtenbörger <https://lechten.gitlab.io/#me>
 #+SPDX-License-Identifier: GPL-3.0-or-later
 
-# * Badges :noexport:
-# [[https://stable.melpa.org/#/org-re-reveal-citeproc][https://stable.melpa.org/packages/org-re-reveal-citeproc-badge.svg]]
-# [[https://melpa.org/#/org-re-reveal-citeproc][https://melpa.org/packages/org-re-reveal-citeproc-badge.svg]]
-# TODO Uncomment once packages are published.
+* Badges :noexport:
+[[https://stable.melpa.org/#/org-re-reveal-citeproc][https://stable.melpa.org/packages/org-re-reveal-citeproc-badge.svg]]
+[[https://melpa.org/#/org-re-reveal-citeproc][https://melpa.org/packages/org-re-reveal-citeproc-badge.svg]]
 
 # Neither generate table of contents nor section numbers
 #+OPTIONS: toc:nil num:nil
@@ -55,7 +54,8 @@ and comments) are not displayed (properly) on GitLab.
      [[https://github.com/andras-simonyi/citeproc-el][citeproc-el]]
      (~citeproc~ on MELPA)
    - Activate ~org-re-reveal-citeproc~
-     - Place [[file:./org-re-reveal-citeproc.el]] into your load path
+     - Place this directory into your load path or install it from
+       [[https://melpa.org/#/getting-started][MELPA]]
      - Load package manually (~M-x load-library~ followed by
        ~org-re-reveal-citeproc~) or place ~(require 'org-re-reveal-citeproc)~ into your
        "~/.emacs" and restart
@@ -97,6 +97,6 @@ and comments) are not displayed (properly) on GitLab.
 
 
 * License Information
-   - This file is published under the terms of the GNU General Public
-     License as published by the Free Software Foundation; either
-     version 3, or (at your option) any later version.
+This file is published under the terms of the GNU General Public
+License as published by the Free Software Foundation; either
+version 3, or (at your option) any later version.
