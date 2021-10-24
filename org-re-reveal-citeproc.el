@@ -7,7 +7,7 @@
 
 ;; Author: Jens Lechtenbörger
 ;; URL: https://gitlab.com/oer/org-re-reveal-citeproc
-;; Version: 2.0.0
+;; Version: 2.0.1
 ;; Package-Requires: ((emacs "25.1") (org "9.5") (citeproc "0.9") (org-re-reveal "3.0.0"))
 ;; Keywords: hypermedia, tools, slideshow, presentation, bibliography
 
