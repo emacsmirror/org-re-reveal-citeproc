@@ -82,7 +82,7 @@ and comments) are not displayed (properly) on GitLab.
      - Support proper license attribution beyond copy&paste
        - Tool support with [[https://gitlab.com/oer/emacs-reveal][emacs-reveal]]
          (see [cite:@Lec19b;@Lec19c])
-   - TODO: Emacs-reveal should contain ~org-re-reveal-citeproc~ soon
+   - Emacs-reveal contains ~org-re-reveal-citeproc~ since version 9
 
 * Summary
    - Use ~cite~ links of Org mode 9.5
